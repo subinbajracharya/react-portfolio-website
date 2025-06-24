@@ -11,6 +11,7 @@ body {
 
 .card-img-top {
   min-height: 183px;
+  object-fit: cover;
 }
 
 .hero-banner {
