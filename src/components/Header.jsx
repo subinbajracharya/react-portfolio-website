@@ -28,7 +28,7 @@ const Header = () => {
       className="vh-100 d-flex align-items-center text-white hero-banner"
       style={{
         background:
-          "url('./src/assets/images/hero-banner.png') center/cover no-repeat",
+          "url('/assets/images/hero-banner.png') center/cover no-repeat",
       }}
     >
       <div className="container text-center">

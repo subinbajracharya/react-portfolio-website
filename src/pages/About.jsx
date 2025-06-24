@@ -8,7 +8,7 @@ const About = () => {
           <h2 className="text-center mb-4">About Me</h2>
           <div className="col-md-4 text-center mb-4 mb-md-0">
             <img
-              src="./src/assets/images/portfolio-picture.jpg"
+              src="/assets/images/portfolio-picture.jpg"
               alt="Subin Bajracharya"
               className="img-fluid rounded-circle shadow-sm"
               style={{ maxWidth: "250px" }}

@@ -3,28 +3,28 @@ import { FaLink, FaGithub } from "react-icons/fa";
 
 const ProjectsList = [
   {
-    image: "./src/assets/images/demo-project.jpg",
+    image: "/assets/images/demo-project.jpg",
     name: "Consent Capture App",
     desc: "A PowerApps-based solution for collecting digital consents at events integrated with Azure SQL.",
     git_href: "https://github.com/yourusername/consent-app",
     project_href: "https://yourprojectlink.com/consent-app",
   },
   {
-    image: "./src/assets/images/demo-project.jpg",
+    image: "/assets/images/demo-project.jpg",
     name: "Personal Portfolio",
     desc: "A modern responsive website to showcase my work and experience, built using HTML, CSS, and JavaScript.",
     git_href: "https://github.com/yourusername/consent-app",
     project_href: "https://yourprojectlink.com/consent-app",
   },
   {
-    image: "./src/assets/images/demo-project.jpg",
+    image: "/assets/images/demo-project.jpg",
     name: "Personal Portfolio",
     desc: "A React.js web app that fetches and displays meals from an API with a search and filter feature.",
     git_href: "https://github.com/yourusername/consent-app",
     project_href: "https://yourprojectlink.com/consent-app",
   },
   {
-    image: "./src/assets/images/demo-project.jpg",
+    image: "/assets/images/demo-project.jpg",
     name: "Personal Portfolio",
     desc: "A full-stack MERN task manager with user auth, task CRUD operations, and responsive UI.",
     git_href: "https://github.com/yourusername/portfolio",
