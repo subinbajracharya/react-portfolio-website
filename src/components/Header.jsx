@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
-import { FaDownload } from "react-icons/fa";
 
 const Header = () => {
   const element = useRef(null);
@@ -38,13 +37,6 @@ const Header = () => {
               <span ref={element}></span>
             </h1>
             <p className="lead">Turning ideas into reality through code.</p>
-            <a
-              href="/subin-bajracharya-resume.pdf"
-              download="Subin_Bajracharya_Resume.pdf"
-              className="btn btn-outline-light mt-3"
-            >
-              Download Resume <FaDownload />
-            </a>
           </div>
         </div>
       </div>

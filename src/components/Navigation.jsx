@@ -4,7 +4,7 @@ const Navigation = () => {
   return (
     <nav
       id="navbar"
-      className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm"
+      className="navbar navbar-expand-lg navbar-dark bg-gradient-custom fixed-top shadow-sm"
     >
       <div className="container">
         <a className="navbar-brand" href="#">
@@ -23,6 +23,11 @@ const Navigation = () => {
             <li className="nav-item">
               <a className="nav-link" href="#about">
                 About
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#experiences">
+                Experiences
               </a>
             </li>
             <li className="nav-item">

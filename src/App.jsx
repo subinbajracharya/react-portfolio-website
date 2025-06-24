@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Connect from "./pages/Connect";
+import Experiences from "./pages/Experiences";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -52,6 +53,9 @@ function App() {
 
       {/* About Section */}
       <About />
+
+      {/* Experience Section */}
+      <Experiences />
 
       {/* Projects Section */}
       <Projects />

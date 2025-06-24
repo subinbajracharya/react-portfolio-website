@@ -2,10 +2,10 @@ import React from "react";
 
 const About = () => {
   return (
-    <section id="about" className="py-5 bg-light text-dark">
+    <section id="about" className="py-5 bg-gradient-custom text-white">
       <div className="container">
         <div className="row align-items-center">
-          <h2 className="text-center mb-4">About Me</h2>
+          <h2 className="fw-bold text-center mb-5">About Me</h2>
           <div className="col-md-4 text-center mb-4 mb-md-0">
             <img
               src="/assets/images/portfolio-picture.jpg"

@@ -4,6 +4,11 @@ body {
   line-height: 1.6;
 }
 
+.bg-gradient-custom {
+  background: linear-gradient(to right, #141e30, #243b55);
+  background-attachment: fixed;
+}
+
 .hero-banner {
   background-size: cover;
   background-position: center;

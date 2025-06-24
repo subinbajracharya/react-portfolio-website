@@ -33,9 +33,9 @@ const ProjectsList = [
 ];
 const Projects = () => {
   return (
-    <section id="projects" className="py-5 bg-white text-dark">
+    <section id="projects" className="py-5 bg-gradient-custom text-white">
       <div className="container">
-        <h2 className="text-center mb-4">My Projects</h2>
+        <h2 className="fw-bold text-center mb-5">My Projects</h2>
         <div className="row">
           {ProjectsList.map((item, index) => (
             <div key={index} className="col-md-6 col-lg-3 pb-3">

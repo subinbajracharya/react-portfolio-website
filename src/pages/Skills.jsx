@@ -14,11 +14,11 @@ const skillArray = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-5 bg-light text-dark">
+    <section id="skills" className="py-5 bg-gradient-custom text-white">
       <div className="container">
         <div className="row">
           <div className="col-12 mb-4">
-            <h2 className="text-center mb-0">Skills</h2>
+            <h2 className="fw-bold text-center mb-5">Skills</h2>
           </div>
           <div className="col-12">
             <SkillsList skills={skillArray} />

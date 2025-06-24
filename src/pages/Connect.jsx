@@ -22,11 +22,14 @@ const ConnectList = [
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-5 bg-dark text-white text-center">
+    <section
+      id="contact"
+      className="py-5 bg-gradient-custom text-white text-center"
+    >
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h2 className="mb-4">Connect with Me</h2>
+            <h2 className="fw-bold mb-5">Connect with Me</h2>
             <div className="d-flex justify-content-center flex-wrap gap-4">
               {ConnectList.map((item, index) => (
                 <a
