@@ -3,11 +3,11 @@ import { FaLink, FaGithub } from "react-icons/fa";
 
 const ProjectsList = [
   {
-    image: "/assets/images/demo-project.jpg",
-    name: "Consent Capture App",
-    desc: "A PowerApps-based solution for collecting digital consents at events integrated with Azure SQL.",
-    git_href: "https://github.com/yourusername/consent-app",
-    project_href: "https://yourprojectlink.com/consent-app",
+    image: "/assets/images/recipe-generator-app-thumbnail.png",
+    name: "Recipe Generator App",
+    desc: "An App which allows users to search and discover meal recipes instantly by entering ingredients or dish names, fetching results from TheMealDB API.",
+    git_href: "https://github.com/subinbajracharya/Recipe-generator-app",
+    project_href: "https://recipe-generator-app-new.vercel.app/",
   },
   {
     image: "/assets/images/demo-project.jpg",

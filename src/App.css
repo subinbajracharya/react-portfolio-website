@@ -9,6 +9,10 @@ body {
   background-attachment: fixed;
 }
 
+.card-img-top {
+  min-height: 183px;
+}
+
 .hero-banner {
   background-size: cover;
   background-position: center;
