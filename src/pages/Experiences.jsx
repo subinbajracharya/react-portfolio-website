@@ -61,7 +61,7 @@ const Experiences = () => {
         <div className="row">
           {experiences.map((exp, index) => (
             <div className="col-12 mb-4" key={index}>
-              <div className="p-4 bg-secondary bg-opacity-10 border-start border-4 border-info rounded-3 shadow-sm">
+              <div className="experience-card p-4 bg-secondary bg-opacity-10 border-start border-4 border-info rounded-3 shadow-sm">
                 <div className="row">
                   <div className="col-md-2 text-md-start text-info fw-semibold mb-2 mb-md-0">
                     {exp.period}

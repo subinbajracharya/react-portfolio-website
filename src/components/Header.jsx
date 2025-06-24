@@ -11,7 +11,7 @@ const Header = () => {
         // List of strings to display one after another
         "Hi, I'm Subin Bajracharya",
         "Software Developer",
-        "Crafting modern web experiences",
+        "Crafting Modern Web Experiences",
       ],
       typeSpeed: 60, // Speed of typing each character (in milliseconds)
       backSpeed: 40, // Speed of deleting each character (in milliseconds)
