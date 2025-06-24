@@ -57,7 +57,7 @@ const Experiences = () => {
   return (
     <section id="experiences" className="bg-gradient-custom text-white py-5">
       <div className="container">
-        <h2 className="fw-bold text-center mb-5">Experience</h2>
+        <h2 className="fw-bold text-center mb-5">Experiences</h2>
         <div className="row">
           {experiences.map((exp, index) => (
             <div className="col-12 mb-4" key={index}>
