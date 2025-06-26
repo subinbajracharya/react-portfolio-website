@@ -82,6 +82,16 @@ textarea::placeholder {
   transform: translateY(0);
 }
 
+.scrollTop {
+  transition: all 0.2s ease-in !important;
+}
+
+.scrollTop:hover {
+  transform: scale(1.2);
+  border-color: rgb(13, 202, 240) !important;
+  background-color: rgb(13, 202, 240) !important;
+}
+
 footer {
   background-color: #000;
   color: white;

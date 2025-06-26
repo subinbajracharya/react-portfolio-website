@@ -11,6 +11,7 @@ import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Connect from "./pages/Connect";
 import Experiences from "./pages/Experiences";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -68,6 +69,8 @@ function App() {
 
       {/* Footer */}
       <Footer />
+
+      <ScrollToTop />
     </>
   );
 }
