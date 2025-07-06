@@ -10,11 +10,11 @@ const ProjectsList = [
     project_href: "https://recipe-generator-app-new.vercel.app/",
   },
   {
-    image: "/assets/images/demo-project.jpg",
-    name: "Personal Portfolio",
-    desc: "A modern responsive website to showcase my work and experience, built using HTML, CSS, and JavaScript.",
-    git_href: "https://github.com/yourusername/consent-app",
-    project_href: "https://yourprojectlink.com/consent-app",
+    image: "/assets/images/movie-world-app-thumbnail.png",
+    name: "Movie Search App",
+    desc: "A simple React app to search movies by title using the OMDb API. View movie posters, release years, and details in a clean interface.",
+    git_href: "https://github.com/subinbajracharya/React-Movie-Search-App",
+    project_href: "https://react-movie-search-app-ten.vercel.app/",
   },
   {
     image: "/assets/images/demo-project.jpg",

@@ -21,8 +21,8 @@ const Navigation = () => {
         <div className="collapse navbar-collapse" id="navContent">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#about">
-                About
+              <a className="nav-link" href="#skills">
+                Skills
               </a>
             </li>
             <li className="nav-item">
@@ -36,8 +36,8 @@ const Navigation = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#skills">
-                Skills
+              <a className="nav-link" href="#about">
+                About
               </a>
             </li>
             <li className="nav-item">

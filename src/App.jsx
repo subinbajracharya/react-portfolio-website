@@ -52,8 +52,8 @@ function App() {
       {/* Hero Banner */}
       <Header />
 
-      {/* About Section */}
-      <About />
+      {/* Skills Section */}
+      <Skills />
 
       {/* Experience Section */}
       <Experiences />
@@ -61,8 +61,8 @@ function App() {
       {/* Projects Section */}
       <Projects />
 
-      {/* Skills Section */}
-      <Skills />
+      {/* About Section */}
+      <About />
 
       {/* Contact Section */}
       <Connect />
