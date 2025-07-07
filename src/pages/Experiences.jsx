@@ -1,4 +1,5 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 import { FaDownload } from "react-icons/fa";
 
 const experiences = [
@@ -56,12 +57,17 @@ const experiences = [
 const Experiences = () => {
   return (
     <section id="experiences" className="bg-gradient-custom text-white py-5">
-      <div className="container">
+      <Container>
         <h2 className="fw-bold text-center mb-5">Experiences</h2>
-        <div className="row">
+        <div className="row justify-content-center">
           {experiences.map((exp, index) => (
-            <div className="col-12 mb-4" key={index}>
-              <div className="experience-card p-4 bg-secondary bg-opacity-10 border-start border-4 border-info rounded-3 shadow-sm">
+            <div
+              className="col-12 mb-4"
+              key={index}
+              data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
+              data-aos-delay={index * 100}
+            >
+              <div className="experience-card p-4 bg-secondary bg-opacity-10 border-start border-4 border-info rounded-4 shadow-sm h-100">
                 <div className="row">
                   <div className="col-md-2 text-md-start text-info fw-semibold mb-2 mb-md-0">
                     {exp.period}
@@ -90,16 +96,18 @@ const Experiences = () => {
             </div>
           ))}
         </div>
-        <div className="text-center">
+        <div className="text-center" data-aos="fade-up">
           <a
             href="/subin-bajracharya-resume.pdf"
             download="Subin_Bajracharya_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn btn-outline-light"
           >
             View Full Resume <FaDownload />
           </a>
         </div>
-      </div>
+      </Container>
     </section>
   );
 };

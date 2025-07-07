@@ -1,17 +1,17 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 
 const About = () => {
   return (
     <section id="about" className="py-5 bg-gradient-custom text-white">
-      <div className="container">
+      <Container>
         <div className="row align-items-center">
           <h2 className="fw-bold text-center mb-5">About Me</h2>
           <div className="col-md-4 text-center mb-4 mb-md-0">
             <img
               src="/assets/images/portfolio-picture.jpg"
               alt="Subin Bajracharya"
-              className="img-fluid rounded-circle shadow-sm"
-              style={{ maxWidth: "250px" }}
+              className="responsive-max-width rounded-4 shadow-sm"
             />
           </div>
           <div className="col-md-8">
@@ -27,7 +27,7 @@ const About = () => {
             </p>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 };

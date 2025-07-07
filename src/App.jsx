@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
+import "aos/dist/aos.css";
 import Navigation from "./components/Navigation";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -12,6 +13,7 @@ import Skills from "./pages/Skills";
 import Connect from "./pages/Connect";
 import Experiences from "./pages/Experiences";
 import ScrollToTop from "./components/ScrollToTop";
+import Aos from "aos";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -42,6 +44,13 @@ function App() {
         anchor.removeEventListener("click", handleSmoothScroll)
       );
     };
+  }, []);
+
+  useEffect(() => {
+    Aos.init({
+      duration: 800,
+      once: true,
+    });
   }, []);
 
   return (
