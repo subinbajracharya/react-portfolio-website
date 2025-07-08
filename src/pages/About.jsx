@@ -11,7 +11,7 @@ const About = () => {
             <img
               src="/assets/images/portfolio-picture.jpg"
               alt="Subin Bajracharya"
-              className="responsive-max-width rounded-4 shadow-sm"
+              className="img-fluid responsive-max-width rounded-4 shadow-sm"
             />
           </div>
           <div className="col-md-8">
