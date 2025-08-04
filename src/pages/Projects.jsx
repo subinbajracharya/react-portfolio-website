@@ -17,11 +17,11 @@ const ProjectsList = [
     project_href: "https://react-movie-search-app-ten.vercel.app/",
   },
   {
-    image: "/assets/images/demo-project.jpg",
-    name: "Personal Portfolio",
-    desc: "A React.js web app that fetches and displays meals from an API with a search and filter feature.",
-    git_href: "https://github.com/yourusername/consent-app",
-    project_href: "https://yourprojectlink.com/consent-app",
+    image: "/assets/images/ft-thumbnail.png",
+    name: "Financial Tracker",
+    desc: "A personal financial tracker web app that helps users manage income and expenses, visualize spending through interactive charts. Built with the MERN stack, and deployed Front-end on Vercel and Back-end on Render.",
+    git_href: "https://github.com/subinbajracharya/financial-tracker-frontend",
+    project_href: "https://financial-tracker-frontend-alpha.vercel.app",
   },
   {
     image: "/assets/images/demo-project.jpg",
