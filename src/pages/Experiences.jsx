@@ -1,12 +1,12 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { FaDownload } from "react-icons/fa";
 
 const experiences = [
   {
     role: "Full Stack Development Program (Ongoing)",
     company: "Dented Code Academy",
-    period: "2025 - Present",
+    period: "May 2025 - Present",
     desc: "Participating in an immersive hands-on program focused on the MERN stack, developing full-stack applications using MongoDB, Express.js, React, and Node.js, along with exposure to Docker, Redux, and GraphQL.",
     skills: [
       "MongoDB",
@@ -22,7 +22,7 @@ const experiences = [
   {
     role: "Full Stack Web Developer – Intern",
     company: "ActionAid Australia",
-    period: "2023",
+    period: "August 2024 - November 2024",
     desc: "Collaborated in a team of 5 to develop a Microsoft PowerApps-based application for capturing event consents, integrated with Power Automate and SharePoint, and presented a successful demo to ActionAid leadership.",
     skills: [
       "PowerApps",
@@ -35,21 +35,21 @@ const experiences = [
   {
     role: "Full Stack Web Developer",
     company: "Itonics Innovation",
-    period: "2020 - 2022",
+    period: "July 2020 - December 2022",
     desc: "Worked on high-quality front-end interfaces using modern JavaScript frameworks, translating business needs into intuitive user experiences and ensuring responsive design compatibility across devices.",
     skills: ["JavaScript", "Python", "REST API", "Wordpress", "Hubspot", "PHP"],
   },
   {
     role: "Frontend Web Developer",
     company: "Rapid Web Solutions",
-    period: "2018 - 2020",
+    period: "February 2018 - February 2020",
     desc: "Designed and developed user-friendly websites for clients using HTML5, CSS3, JavaScript, and Bootstrap. Maintained SEO optimization, cross-browser compatibility, and mobile responsiveness. Handled ongoing site maintenance and feature enhancements based on client feedback.",
     skills: ["HTML5", "CSS3", "JavaScript", "jQuery", "Bootstrap", "Tailwind"],
   },
   {
     role: "Frontend Web Designer",
     company: "Smart Solutions",
-    period: "2015 - 2018",
+    period: "January 2015 - February 2018",
     desc: "Designed visually appealing and functional web pages, ensuring brand consistency and usability, and gained foundational experience in responsive design and layout strategies.",
     skills: ["Adobe Illustrator", "Photoshop", "HTML", "CSS"],
   },
@@ -59,20 +59,25 @@ const Experiences = () => {
     <section id="experiences" className="bg-gradient-custom text-white py-5">
       <Container>
         <h2 className="fw-bold text-center mb-5">Experiences</h2>
-        <div className="row justify-content-center">
+        <Row>
           {experiences.map((exp, index) => (
-            <div
-              className="col-12 mb-4"
+            <Col
+              xs={12}
+              className="mb-4"
               key={index}
               data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
               data-aos-delay={index * 100}
             >
               <div className="experience-card p-4 bg-secondary bg-opacity-10 border-start border-4 border-info rounded-4 shadow-sm h-100">
-                <div className="row">
-                  <div className="col-md-2 text-md-start text-info fw-semibold mb-2 mb-md-0">
+                <Row className="align-items-center">
+                  <Col
+                    xs={12}
+                    md={2}
+                    className="text-md-start text-info fw-semibold mb-2 mb-md-0"
+                  >
                     {exp.period}
-                  </div>
-                  <div className="col-md-10">
+                  </Col>
+                  <Col xs={12} md={10} className="text-md-start">
                     <h5 className="fw-bold mb-1">
                       {exp.role}{" "}
                       <span className="text-info fw-normal">
@@ -90,12 +95,12 @@ const Experiences = () => {
                         </span>
                       ))}
                     </div>
-                  </div>
-                </div>
+                  </Col>
+                </Row>
               </div>
-            </div>
+            </Col>
           ))}
-        </div>
+        </Row>
         <div className="text-center" data-aos="fade-up">
           <a
             href="/subin-bajracharya-resume.pdf"
