@@ -10,13 +10,6 @@ const ProjectsList = [
     project_href: "https://recipe-generator-app-new.vercel.app/",
   },
   {
-    image: "/assets/images/movie-world-app-thumbnail.png",
-    name: "Movie Search App",
-    desc: "A simple React app to search movies by title using the OMDb API. View movie posters, release years, and details in a clean interface.",
-    git_href: "https://github.com/subinbajracharya/React-Movie-Search-App",
-    project_href: "https://react-movie-search-app-ten.vercel.app/",
-  },
-  {
     image: "/assets/images/ft-thumbnail.png",
     name: "Financial Tracker",
     desc: "A personal financial tracker web app that helps users manage income and expenses, visualize spending through interactive charts. Built with the MERN stack, and deployed Front-end on Vercel and Back-end on Render.",
@@ -24,11 +17,18 @@ const ProjectsList = [
     project_href: "https://financial-tracker-frontend-alpha.vercel.app",
   },
   {
-    image: "/assets/images/demo-project.jpg",
-    name: "Personal Portfolio",
-    desc: "A full-stack MERN task manager with user auth, task CRUD operations, and responsive UI.",
-    git_href: "https://github.com/yourusername/portfolio",
-    project_href: "https://yourprojectlink.com/consent-app",
+    image: "/assets/images/lms-thumbnail.png",
+    name: "Learning Management System",
+    desc: "A comprehensive Learning Management System (LMS) built with the MERN stack, featuring user authentication, course management, and progress tracking.",
+    git_href: "",
+    project_href: "",
+  },
+  {
+    image: "/assets/images/electra-hub-thumbnail.png",
+    name: "Electra Hub",
+    desc: "ElectraHub delivers a crisp shopping experience using React Server Components (Next.js), Tailwind CSS, image optimization, and serverless functions on Vercel.",
+    git_href: "https://github.com/subinbajracharya?tab=repositories",
+    project_href: "https://electrahub.vercel.app/",
   },
 ];
 const Projects = () => {
@@ -39,29 +39,33 @@ const Projects = () => {
         <div className="row">
           {ProjectsList.map((item, index) => (
             <div key={index} className="col-md-6 col-lg-3 pb-3">
-              <div className="card h-100 shadow-sm">
+              <div className="card h-100 shadow-sm overflow-hidden">
                 <img
                   src={item.image}
                   className="card-img-top"
                   alt={item.name}
                 />
-                <div className="card-body">
-                  <h5 className="card-title">{item.name}</h5>
-                  <p className="card-text">{item.desc}</p>
-                  <a
-                    href={item.git_href}
-                    target="_blank"
-                    className="btn btn-sm btn-dark mt-2 me-2"
-                  >
-                    {<FaGithub />} GitHub
-                  </a>
-                  <a
-                    href={item.project_href}
-                    target="_blank"
-                    className="btn btn-sm btn-outline-dark mt-2"
-                  >
-                    <FaLink /> Link to Project
-                  </a>
+                <div className="card-body d-flex flex-column justify-content-between">
+                  <div className="mb-3">
+                    <h5 className="card-title">{item.name}</h5>
+                    <p className="card-text">{item.desc}</p>
+                  </div>
+                  <div className="link-buttons">
+                    <a
+                      href={item.git_href}
+                      target="_blank"
+                      className="btn btn-sm btn-dark me-2"
+                    >
+                      {<FaGithub />} GitHub
+                    </a>
+                    <a
+                      href={item.project_href}
+                      target="_blank"
+                      className="btn btn-sm btn-outline-dark"
+                    >
+                      <FaLink /> Link to Project
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

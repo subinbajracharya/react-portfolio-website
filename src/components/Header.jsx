@@ -9,7 +9,6 @@ const Header = () => {
     typedInstance.current = new Typed(element.current, {
       strings: [
         // List of strings to display one after another
-        "Hi, I'm Subin Bajracharya",
         "Software Developer",
         "Crafting Modern Web Experiences",
       ],
@@ -27,7 +26,7 @@ const Header = () => {
       className="vh-100 d-flex align-items-center text-white hero-banner"
       style={{
         background:
-          "url('/assets/images/hero-banner.png') center/cover no-repeat",
+          "url('/assets/images/hero-banner.jpg') center/cover no-repeat",
       }}
     >
       <div className="container text-center">

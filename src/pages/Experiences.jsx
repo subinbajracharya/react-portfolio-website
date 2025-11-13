@@ -1,12 +1,11 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { FaDownload } from "react-icons/fa";
 
 const experiences = [
   {
-    role: "Full Stack Development Program (Ongoing)",
+    role: "Full Stack Development Program",
     company: "Dented Code Academy",
-    period: "May 2025 - Present",
+    period: "May 2025 - November 2025",
     desc: "Participating in an immersive hands-on program focused on the MERN stack, developing full-stack applications using MongoDB, Express.js, React, and Node.js, along with exposure to Docker, Redux, and GraphQL.",
     skills: [
       "MongoDB",
@@ -20,7 +19,7 @@ const experiences = [
     ],
   },
   {
-    role: "Full Stack Web Developer – Intern",
+    role: "Full Stack Web Developer – Internship as a part of University Course.",
     company: "ActionAid Australia",
     period: "August 2024 - November 2024",
     desc: "Collaborated in a team of 5 to develop a Microsoft PowerApps-based application for capturing event consents, integrated with Power Automate and SharePoint, and presented a successful demo to ActionAid leadership.",
@@ -101,7 +100,7 @@ const Experiences = () => {
             </Col>
           ))}
         </Row>
-        <div className="text-center" data-aos="fade-up">
+        {/* <div className="text-center" data-aos="fade-up">
           <a
             href="/subin-bajracharya-resume.pdf"
             download="Subin_Bajracharya_Resume.pdf"
@@ -111,7 +110,7 @@ const Experiences = () => {
           >
             View Full Resume <FaDownload />
           </a>
-        </div>
+        </div> */}
       </Container>
     </section>
   );
