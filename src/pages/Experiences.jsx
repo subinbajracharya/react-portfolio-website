@@ -19,7 +19,7 @@ const experiences = [
     ],
   },
   {
-    role: "Full Stack Web Developer – Internship as a part of University Course.",
+    role: "Full Stack Web Developer – Internship as a part of University Course",
     company: "ActionAid Australia",
     period: "August 2024 - November 2024",
     desc: "Collaborated in a team of 5 to develop a Microsoft PowerApps-based application for capturing event consents, integrated with Power Automate and SharePoint, and presented a successful demo to ActionAid leadership.",
