@@ -21,7 +21,7 @@ const projects = [
     desc: "ElectraHub delivers a crisp shopping experience using React Server Components (Next.js), Tailwind CSS, image optimization, and serverless functions on Vercel.",
     git_href: "https://github.com/subinbajracharya/electrahub-customer-fe",
     project_href: "https://electrahub.vercel.app/",
-    tech: ["Next.js", "Express", "Tailwind", "Mongoose", "Stripe"],
+    tech: ["Next.js", "Express", "Tailwind", "Mongoose", "Stripe Payments"],
   },
   {
     image: "/assets/images/lms-thumbnail.png",
