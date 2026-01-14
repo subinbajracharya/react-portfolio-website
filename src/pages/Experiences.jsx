@@ -3,6 +3,27 @@ import { Col, Container, Row } from "react-bootstrap";
 
 const experiences = [
   {
+    role: "Full Stack Developer",
+    company: "REBB TECH PTY LTD",
+    period: "November 2024 - Present",
+    desc: "Building and improving ERP/CRM modules by integrating React.js + Redux front-end with Node.js and Spring Boot backends via REST/GraphQL APIs. Working with PostgreSQL and Redis caching, strengthening OAuth2/JWT security, and improving CI/CD and testing with Docker/Jenkins, Jest, and React Testing Library.",
+    skills: [
+      "TypeScript",
+      "React",
+      "Redux",
+      "NodeJs",
+      "Spring Boot",
+      "REST API",
+      "PostgreSQL",
+      "NestJS",
+      "Docker",
+      "OAuth2",
+      "JWT",
+      "Jest",
+      "React Testing Library",
+    ],
+  },
+  {
     role: "Full Stack Development Program",
     company: "Dented Code Academy",
     period: "May 2025 - November 2025",
@@ -16,19 +37,6 @@ const experiences = [
       "Docker",
       "Redux",
       "AWS",
-    ],
-  },
-  {
-    role: "Full Stack Web Developer – Internship as a part of University Course",
-    company: "ActionAid Australia",
-    period: "August 2024 - November 2024",
-    desc: "Collaborated in a team of 5 to develop a Microsoft PowerApps-based application for capturing event consents, integrated with Power Automate and SharePoint, and presented a successful demo to ActionAid leadership.",
-    skills: [
-      "PowerApps",
-      "SharePoint",
-      "Power Automate",
-      "Microsoft Azure",
-      "Agile",
     ],
   },
   {
@@ -100,17 +108,6 @@ const Experiences = () => {
             </Col>
           ))}
         </Row>
-        {/* <div className="text-center" data-aos="fade-up">
-          <a
-            href="/subin-bajracharya-resume.pdf"
-            download="Subin_Bajracharya_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-outline-light"
-          >
-            View Full Resume <FaDownload />
-          </a>
-        </div> */}
       </Container>
     </section>
   );

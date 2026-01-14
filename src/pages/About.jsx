@@ -195,6 +195,8 @@ const About = () => {
                     "GraphQL",
                     "Bootstrap",
                     "Jest",
+                    "Docker",
+                    "AWS",
                   ].map((t) => (
                     <TechChip key={t}>{t}</TechChip>
                   ))}
@@ -241,7 +243,7 @@ const About = () => {
                         margin: "14px 0 24px",
                       }}
                     >
-                      <Stat value="4+" label="Years experience" />
+                      <Stat value="5+" label="Years experience" />
                       <Stat value="25+" label="Projects delivered" />
                       <Stat value="99%" label="On‑time delivery" />
                     </div>
