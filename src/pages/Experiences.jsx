@@ -17,26 +17,6 @@ const experiences = [
       "PostgreSQL",
       "NestJS",
       "Docker",
-      "OAuth2",
-      "JWT",
-      "Jest",
-      "React Testing Library",
-    ],
-  },
-  {
-    role: "Full Stack Development Program",
-    company: "Dented Code Academy",
-    period: "May 2025 - November 2025",
-    desc: "Participating in an immersive hands-on program focused on the MERN stack, developing full-stack applications using MongoDB, Express.js, React, and Node.js, along with exposure to Docker, Redux, and GraphQL.",
-    skills: [
-      "MongoDB",
-      "Express",
-      "React",
-      "Node.js",
-      "GraphQL",
-      "Docker",
-      "Redux",
-      "AWS",
     ],
   },
   {
@@ -61,6 +41,34 @@ const experiences = [
     skills: ["Adobe Illustrator", "Photoshop", "HTML", "CSS"],
   },
 ];
+
+const programs = [
+  {
+    role: "Master of Information Technology and Systems",
+    company: "Victorian Institute of Technology (VIT)",
+    period: "February 2023 - December 2024",
+    grade: "4.95 GPA",
+    desc: "Software Engineering (Graduated with Dean's Honours Roll distinction)",
+    skills: [],
+  },
+  {
+    role: "Full Stack Development Program",
+    company: "Dented Code Academy",
+    period: "May 2025 - November 2025",
+    desc: "Participating in an immersive hands-on program focused on the MERN stack, developing full-stack applications using MongoDB, Express.js, React, and Node.js, along with exposure to Docker, Redux, and GraphQL.",
+    skills: [
+      "MongoDB",
+      "Express",
+      "React",
+      "Node.js",
+      "GraphQL",
+      "Docker",
+      "Redux",
+      "AWS",
+    ],
+  },
+];
+
 const Experiences = () => {
   return (
     <section id="experiences" className="bg-gradient-custom text-white py-5">
@@ -102,6 +110,57 @@ const Experiences = () => {
                         </span>
                       ))}
                     </div>
+                  </Col>
+                </Row>
+              </div>
+            </Col>
+          ))}
+        </Row>
+
+        <h2 className="fw-bold text-center mb-5 mt-5">Education & Training</h2>
+        <Row>
+          {programs.map((prog, index) => (
+            <Col
+              xs={12}
+              className="mb-4"
+              key={index}
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
+              <div className="program-card p-4 bg-secondary bg-opacity-10 border-start border-4 border-warning rounded-4 shadow-sm h-100">
+                <Row className="align-items-center">
+                  <Col
+                    xs={12}
+                    md={2}
+                    className="text-md-start text-warning fw-semibold mb-2 mb-md-0"
+                  >
+                    {prog.period}
+                    {prog.grade && (
+                      <div className="small text-warning-50 mt-1">
+                        {prog.grade}
+                      </div>
+                    )}
+                  </Col>
+                  <Col xs={12} md={10} className="text-md-start">
+                    <h5 className="fw-bold mb-1">
+                      {prog.role}{" "}
+                      <span className="text-warning fw-normal">
+                        · {prog.company}
+                      </span>
+                    </h5>
+                    <p className="text-light-50 mb-2">{prog.desc}</p>
+                    {prog.skills.length > 0 && (
+                      <div className="d-flex flex-wrap gap-2">
+                        {prog.skills.map((skill, i) => (
+                          <span
+                            key={i}
+                            className="badge bg-warning text-dark fw-semibold"
+                          >
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
+                    )}
                   </Col>
                 </Row>
               </div>
