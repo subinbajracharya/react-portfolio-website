@@ -1,7 +1,14 @@
+html {
+  overflow-x: hidden;
+}
+
 body {
+  overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
 .bg-gradient-custom {
@@ -340,4 +347,24 @@ footer {
   .card-body-custom {
     padding: 18px;
   }
+}
+
+/* ============================================
+   Section Container Constraints
+   ============================================ */
+
+section {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Ensure Swiper containers don't overflow */
+.swiper {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Navbar overflow fix */
+.navbar {
+  overflow-x: hidden;
 }

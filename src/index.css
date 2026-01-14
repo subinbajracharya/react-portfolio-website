@@ -1,0 +1,370 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-gradient-custom {
+  background: linear-gradient(to right, #141e30, #243b55);
+  background-attachment: fixed;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.card-img-top {
+  min-height: 183px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .card-img-top {
+    min-height: 180px;
+  }
+}
+
+.hero-banner {
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 0.75rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+input.form-control,
+textarea.form-control {
+  /* background-color: #222; */
+  /* color: #fff; */
+  border: 1px solid #444;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #ccc;
+}
+
+.btn-outline-light:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.timeline-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  will-change: transform;
+}
+
+.timeline-card:hover {
+  transform: rotateY(5deg) translateY(-5px) scale(1.02);
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.25);
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.animate.animate-fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scrollTop {
+  transition: all 0.2s ease-in !important;
+}
+
+.scrollTop:hover {
+  transform: scale(1.2);
+  border-color: rgb(13, 202, 240) !important;
+  background-color: rgb(13, 202, 240) !important;
+}
+
+footer {
+  background-color: #000;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .hero-banner h1 {
+    font-size: 2rem;
+  }
+
+  .hero-banner p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .responsive-max-width {
+    max-width: 250px;
+  }
+}
+
+/* ============================================
+   Projects Section - Unified UI Styles
+   ============================================ */
+
+/* Section Badge */
+.section-badge {
+  background: rgba(13, 202, 240, 0.15);
+  color: #0dcaf0;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid rgba(13, 202, 240, 0.25);
+}
+
+/* Project Card */
+.project-card {
+  height: 100%;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.project-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.project-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.project-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.project-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.project-card:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-inner {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
+}
+
+.card-inner:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* Card Image */
+.card-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.card-inner:hover .card-image {
+  transform: scale(1.08);
+}
+
+/* Hover Overlay */
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  pointer-events: none;
+}
+
+.card-inner:hover .card-overlay {
+  opacity: 1;
+}
+
+.overlay-content {
+  display: flex;
+  gap: 12px;
+  transform: translateY(15px);
+  opacity: 0;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
+}
+
+.card-inner:hover .overlay-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.icon-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.github-btn {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #f8fafc;
+}
+
+.github-btn:hover {
+  background: #f8fafc;
+  color: #0f172a;
+  transform: scale(1.1);
+}
+
+.live-btn {
+  background: rgba(13, 202, 240, 0.2);
+  border: 1px solid rgba(13, 202, 240, 0.3);
+  color: #0dcaf0;
+}
+
+.live-btn:hover {
+  background: #0dcaf0;
+  color: #0f172a;
+  transform: scale(1.1);
+}
+
+/* Card Content */
+.card-body-custom {
+  padding: 22px;
+}
+
+.card-title {
+  font-weight: 700;
+  color: #f8fafc;
+  transition: color 0.25s ease;
+}
+
+.card-inner:hover .card-title {
+  color: #0dcaf0;
+}
+
+.card-description {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 18px;
+}
+
+/* Tech Stack Tags */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-tag {
+  background: rgba(13, 202, 240, 0.15);
+  border: 1px solid rgba(13, 202, 240, 0.25);
+  color: #0dcaf0;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* ============================================
+   Responsive Styles
+   ============================================ */
+
+@media (max-width: 992px) {
+  .card-image-wrapper {
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper {
+    padding: 15px 35px 40px;
+  }
+
+  .card-image-wrapper {
+    height: 200px;
+  }
+
+  .card-body-custom {
+    padding: 18px;
+  }
+}
+
+/* ============================================
+   Section Container Constraints
+   ============================================ */
+
+section {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Ensure Swiper containers don't overflow */
+.swiper {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Navbar overflow fix */
+.navbar {
+  overflow-x: hidden;
+}
