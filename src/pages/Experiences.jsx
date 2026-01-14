@@ -83,7 +83,7 @@ const Experiences = () => {
               data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
               data-aos-delay={index * 100}
             >
-              <div className="experience-card p-4 bg-secondary bg-opacity-10 border-start border-4 border-info rounded-4 shadow-sm h-100">
+              <div className="timeline-card p-4 bg-secondary bg-opacity-10 border-start border-4 border-info rounded-4 shadow-sm h-100">
                 <Row className="align-items-center">
                   <Col
                     xs={12}
@@ -117,7 +117,7 @@ const Experiences = () => {
           ))}
         </Row>
 
-        <h2 className="fw-bold text-center mb-5 mt-5">Education & Training</h2>
+        <h2 className="fw-bold text-center my-5">Education & Training</h2>
         <Row>
           {programs.map((prog, index) => (
             <Col
@@ -127,7 +127,7 @@ const Experiences = () => {
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
-              <div className="program-card p-4 bg-secondary bg-opacity-10 border-start border-4 border-warning rounded-4 shadow-sm h-100">
+              <div className="timeline-card p-4 bg-secondary bg-opacity-10 border-start border-4 border-warning rounded-4 shadow-sm h-100">
                 <Row className="align-items-center">
                   <Col
                     xs={12}

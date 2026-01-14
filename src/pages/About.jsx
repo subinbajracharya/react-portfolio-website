@@ -19,28 +19,6 @@ const styles = {
       "linear-gradient(135deg, #0f172a 0%, #111827 40%, #0b1021 100%)",
     color: "#e5e7eb",
   },
-  glowOne: {
-    position: "absolute",
-    top: "-10%",
-    right: "-10%",
-    width: 320,
-    height: 320,
-    background:
-      "radial-gradient(closest-side, rgba(59,130,246,.25), rgba(59,130,246,0))",
-    filter: "blur(30px)",
-    borderRadius: "50%",
-  },
-  glowTwo: {
-    position: "absolute",
-    bottom: "-15%",
-    left: "-10%",
-    width: 380,
-    height: 380,
-    background:
-      "radial-gradient(closest-side, rgba(16,185,129,.18), rgba(16,185,129,0))",
-    filter: "blur(36px)",
-    borderRadius: "50%",
-  },
   header: {
     textAlign: "center",
     marginBottom: 42,
@@ -130,14 +108,10 @@ const Stat = ({ value, label }) => (
 const About = () => {
   return (
     <section id="about" className="py-5 bg-gradient-custom text-white">
-      <span style={styles.glowOne} />
-      <span style={styles.glowTwo} />
       <Container>
         <header style={styles.header}>
           <div style={{ display: "inline-block", marginBottom: 10 }}>
-            <Badge bg="primary" pill>
-              About
-            </Badge>
+            <span className="section-badge mb-3 d-inline-block">About</span>
           </div>
           <h2 style={styles.title}>
             Hi, I’m Subin — a Software Engineer focused on clean UI and robust
@@ -181,7 +155,7 @@ const About = () => {
                   Subin Bajracharya
                 </Card.Title>
                 <Card.Subtitle className="mb-3" style={{ color: "#94a3b8" }}>
-                  Software Engineer · React / Node
+                  Software Engineer
                 </Card.Subtitle>
                 <div style={styles.chipRow}>
                   {[

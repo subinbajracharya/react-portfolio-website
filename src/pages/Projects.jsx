@@ -1,17 +1,19 @@
 import React from "react";
-import { FaLink, FaGithub } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/autoplay";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import ProjectCard from "../components/ProjectCard";
 
-const ProjectsList = [
+const projects = [
   {
     image: "/assets/images/domain-ranking-app.png",
     name: "Domain Ranking Application",
     desc: "A full-stack domain ranking comparison tool with NestJS backend (PostgreSQL + Prisma), 24-hour cached Tranco data, and interactive Nuxt 3 charts.",
     git_href: "https://github.com/subinbajracharya/domain-rank-web",
     project_href: "https://domain-rank-web.vercel.app/",
+    tech: ["Nest.js", "PostgreSQL", "Prisma", "Nuxt 3", "Bootstrap5"],
   },
   {
     image: "/assets/images/electra-hub-thumbnail.png",
@@ -19,6 +21,7 @@ const ProjectsList = [
     desc: "ElectraHub delivers a crisp shopping experience using React Server Components (Next.js), Tailwind CSS, image optimization, and serverless functions on Vercel.",
     git_href: "https://github.com/subinbajracharya/electrahub-customer-fe",
     project_href: "https://electrahub.vercel.app/",
+    tech: ["Next.js", "Express", "Tailwind", "Mongoose", "Stripe"],
   },
   {
     image: "/assets/images/lms-thumbnail.png",
@@ -26,6 +29,7 @@ const ProjectsList = [
     desc: "A comprehensive full-stack Library Management System built with MERN stack (MongoDB, Express, React, Node.js), featuring secure JWT authentication, book management, borrowing system with return tracking, user reviews with star ratings, and a full-featured admin dashboard.",
     git_href: "https://github.com/subinbajracharya/LMS-front",
     project_href: "",
+    tech: ["MongoDB", "Express", "React", "Node.js", "JWT"],
   },
   {
     image: "/assets/images/ft-thumbnail.png",
@@ -33,6 +37,7 @@ const ProjectsList = [
     desc: "A personal financial tracker web app that helps users manage income and expenses, visualize spending through interactive charts. Built with the MERN stack.",
     git_href: "https://github.com/subinbajracharya/financial-tracker-frontend",
     project_href: "https://financial-tracker-frontend-alpha.vercel.app",
+    tech: ["React", "Redux", "MongoDB", "Chart.js"],
   },
   {
     image: "/assets/images/recipe-generator-app-thumbnail.png",
@@ -40,22 +45,29 @@ const ProjectsList = [
     desc: "An App which allows users to search and discover meal recipes instantly by entering ingredients or dish names, fetching results from TheMealDB API.",
     git_href: "https://github.com/subinbajracharya/Recipe-generator-app",
     project_href: "https://recipe-generator-app-new.vercel.app/",
+    tech: ["React", "TheMealDB API", "Axios", "CSS3"],
   },
 ];
-
-const truncate = (text = "", max = 120) =>
-  text.length > max ? text.slice(0, max).trimEnd() + "..." : text;
 
 const Projects = () => {
   return (
     <section id="projects" className="py-5 bg-gradient-custom text-white">
       <div className="container">
-        <h2 className="fw-bold text-center mb-5">Recent Projects</h2>
+        {/* Section Header */}
+        <div className="text-center mb-5">
+          <span className="section-badge mb-3 d-inline-block">
+            My Portfolio
+          </span>
+          <h2 className="fw-bold mb-3">Recent Projects</h2>
+        </div>
+
+        {/* Swiper Carousel */}
         <Swiper
           modules={[Autoplay]}
-          slidesPerView={4}
-          spaceBetween={30}
+          slidesPerView={1}
+          spaceBetween={26}
           loop={true}
+          // autoplay={false}
           autoplay={{
             delay: 0,
             disableOnInteraction: false,
@@ -64,44 +76,32 @@ const Projects = () => {
           speed={3000}
           freeMode={false}
           grabCursor={true}
+          breakpoints={{
+            576: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            992: {
+              slidesPerView: 3,
+              spaceBetween: 24,
+            },
+            1200: {
+              slidesPerView: 4,
+              spaceBetween: 26,
+            },
+          }}
         >
-          {ProjectsList.map((project, index) => (
-            <SwiperSlide key={index} className="py-2">
-              <div className="card h-100 shadow-sm overflow-hidden">
-                <img
-                  src={project.image}
-                  className="card-img-top"
-                  alt={project.name}
-                />
-                <div className="card-body d-flex flex-column">
-                  <h3 className="card-title h6" title={project.name}>
-                    {truncate(project.name, 30)}
-                  </h3>
-                  <p
-                    className="card-text"
-                    title={project.desc}
-                    style={{ fontSize: "0.875rem" }}
-                  >
-                    {truncate(project.desc, 130)}
-                  </p>
-                  <div className="mt-auto d-flex gap-2">
-                    <a
-                      href={project.git_href}
-                      target="_blank"
-                      className="btn btn-sm btn-dark me-2"
-                    >
-                      {<FaGithub />} GitHub
-                    </a>
-                    <a
-                      href={project.project_href}
-                      target="_blank"
-                      className="btn btn-sm btn-outline-dark"
-                    >
-                      <FaLink /> Link
-                    </a>
-                  </div>
-                </div>
-              </div>
+          {projects.map((project, index) => (
+            <SwiperSlide
+              key={index}
+              className="py-2"
+              style={{ height: "auto" }}
+            >
+              <ProjectCard project={project} />
             </SwiperSlide>
           ))}
         </Swiper>
